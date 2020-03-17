@@ -1,0 +1,39 @@
+
+body {background: lightblue;
+	  position: relative;}
+
+h1 {font-size: 40px;
+	color: brown;}
+
+h2 {font-size: 30px;
+	color: brown;}
+
+h3 {font-size: 25px;
+	color: brown;}
+
+h1 span, h2 span, h3 span {color: grey;}
+
+ul {list-style: none;}
+
+#eight {
+ color: blue; }
+
+ .phone {position: absolute;
+ 		left: 2.5%;
+ 		bottom: -15%;
+ 		font-size: 40px;
+ 		color: brown;}
+
+ .task2 {position: absolute;
+ 		 left: 2.5%;
+ 		 bottom: -22%;
+ 		font-size: 40px;
+ 		color: green;}
+
+ .task3 {position: absolute;
+ 		 left: 2.5%;
+ 		 bottom: -29%;
+ 		font-size: 40px;
+ 		color: yellow;}
+
+  
