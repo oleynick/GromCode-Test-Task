@@ -1,7 +1,7 @@
 
 // Исходный массив с числовыми данными
 
-var amy = new Array(5, 12, -20, 67, 9, 78, 50); 
+var amy = new Array(5, 12, -10, 67, 9, 78, 50); 
 
 
 // Функция, которая определяет минимальный элемент в массиве
@@ -12,13 +12,15 @@ var minEl = arr[0];
 
 for(let i=0; i<=arr.length; i++) {
  
-	if(minEl > arr[i]) { minEl = arr[i]; task2.innerText = minEl; }
+	if(minEl > arr[i]) { minEl = arr[i]; /* task2.innerText = minEl; */ }
    
 								} 
+
+return minEl;
 }
 
 
-getMin(amy);
+task2.innerText = getMin(amy);
 
 
 
@@ -34,12 +36,13 @@ for(let i=0; i<=arr.length; i++) {
 
 }
 
-task3.innerText = empty;
+
+return empty;
+
 
 }
 
-
-getEven(amy);
+task3.innerText = getEven(amy);
 
 
 
@@ -54,24 +57,13 @@ var amoba = new Array({name: 'Jonny Walker', birthDate: '1995-12-17'}, {name: 'A
 
 function SearchByName(name) {
 
-	empty2 = new Array();
-	
-	
-	for (var i = 0; i <= amoba.length; i++) {
-
-		var k = amoba[i]["name"];
-
-
-		if (k === name) {empty2.push(amoba[i]);}
-
-		console.log(empty2);
-	}
-
+		let amobaNew = amoba.filter(item => item.name == name);
+					
+	return amobaNew;
 } 
 
 
-
-SearchByName('Andrew');
+console.log(SearchByName('Andrew'));
 	
 
 	
